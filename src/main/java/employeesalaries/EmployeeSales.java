@@ -21,7 +21,5 @@ public class EmployeeSales implements Employee {
         }
         return this.baseSalary;
 
-
     }
-
 }

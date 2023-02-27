@@ -5,7 +5,7 @@ public class AppSalaryPayout {
 
         Employee salesEmployee = new EmployeeSales(5000, true, 0.2);
 
-        SalaryPayout calculatorSalary = new SalaryPayout(sales);
+        SalaryPayout calculatorSalary = new SalaryPayout(salesEmployee);
 
         calculatorSalary.processPayOut();
 

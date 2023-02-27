@@ -7,12 +7,14 @@ public class UserInfo {
         }
         return false;
     }
+
     public boolean checkUserAge(int age) {
         if (age > 30) {
             return true;
         }
         return false;
     }
+
     public boolean checkUserHeight(double height) {
         if (height > 160) {
             return true;

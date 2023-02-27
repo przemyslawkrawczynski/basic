@@ -5,6 +5,7 @@ public class AppPayOut {
 
         CashMachinePayOut newPayOut = new CashMachinePayOut();
 
-                newPayOut.initiatePayOut();
+        newPayOut.initiatePayOut();
     }
+
 }
