@@ -40,6 +40,5 @@ public class AverageApp {
         System.out.println("Lenght of this table is: " + tableLength);
         System.out.println("The averge of this table is: " + tableAverage);
 
-
     }
 }
