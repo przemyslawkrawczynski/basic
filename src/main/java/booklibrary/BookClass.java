@@ -2,6 +2,8 @@ package booklibrary;
 
 import ArrayListsLinkedLists.Book;
 
+import java.util.Objects;
+
 public class BookClass {
 
     String bookTitle;
@@ -28,12 +30,12 @@ public class BookClass {
 
     @Override
     public int hashCode() {
-        return bookYearOfPublishing; //jak zdefiniowac unikalny hascode tutaj, czy nie trzeba unikalnego?
+        return Objects.hash(bookTitle, bookAuthor, bookYearOfPublishing);
     }
 
     @Override
     public boolean equals(Object o) {
-        BookClass e = (BookClass) o; // jak dokładnie działa ta linia kodu po kolei? Dlaczego "o" jest poza nawiasem (BookClass)?
+        BookClass e = (BookClass) o;// <- TO JEST RZUTOWANIE, CZYLI MÓWIĘ TRAKTUJ (Object) jako (BookClass)  jak dokładnie działa ta linia kodu po kolei? Dlaczego "o" jest poza nawiasem (BookClass)?
         return this.bookTitle.equals(e.getBookTitle()) &&
                 this.bookAuthor.equals(e.getBookAuthor()) &&
                 this.bookYearOfPublishing.equals(e.getBookYearOfPublishing());

@@ -14,9 +14,13 @@ public class RandomObjectGenerator {
 
         for (int n = 0; n < 50; n++) {
             int random = randomNumberofAs.nextInt(49);
-            String a = "a".repeat(random + 1);              //znalazlem taka metode .repeat w internecie,
-            // nie wiem czy tego tutaj mozna uzyc czy
-            // moze czegos innego
+
+            String a = "a";
+
+            for (int k = 0; k < random; k++) {
+                a = "a" + a;
+            }
+
             lettersList.add(a);
             System.out.println("added new object: " + a);
 
